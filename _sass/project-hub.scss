@@ -11,13 +11,13 @@ http://superfriend.ly/
 */
 
 
-/*-------------------------------------------    
-    Fonts     
+/*-------------------------------------------
+    Fonts
 -------------------------------------------*/
 
 
 
-/*-------------------------------------------    
+/*-------------------------------------------
     Flag
 	(Thanks Jeremy: http://adactio.com/journal/5429/)
 -------------------------------------------*/
@@ -25,15 +25,15 @@ body:after { content: 'mini'; display: none; }
 
 
 
-/*-------------------------------------------    
-    Base     
+/*-------------------------------------------
+    Base
 -------------------------------------------*/
 * { margin: 0; padding: 0; }
 *, *:before, *:after {
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
  }
 html { font-size: 62.5%; } /* for rems */
-body { font-family: 'Karla', Helvetica, Arial, sans-serif; color: #333; }
+body { background: $background-color; font-family: 'Karla', Helvetica, Arial, sans-serif; color: $text-color; }
 
 
 /* block level */
@@ -43,7 +43,7 @@ h2, .h2 { font: bold 1.8rem 'Karla', Helvetica, Arial, sans-serif; margin: 0 0 1
 h3, .h3 { font: bold 1.5rem 'Karla', Helvetica, Arial, sans-serif; margin: 0 0 1em; }
 h4, h5, h6, .h4, .h5, .h6 { font: bold 1.2rem 'Karla', Helvetica, Arial, sans-serif; margin: 0 0 1em; }
 
-p, ul, dl, ol, table { font-size: 1.6rem; margin: 0 0 1.5em; color: #777; }
+p, ul, dl, ol, table { font-size: 1.6rem; margin: 0 0 1.5em; color: $body-text-color; }
 ul { margin-left: 20px; font-size: 1.4rem; }
 li { margin: 0 0 0.3em; }
 
@@ -89,17 +89,17 @@ sub, sup { line-height: 0; }
 ::-moz-selection { background: #2a69c2; color: #fff; }
 
 
-/*-------------------------------------------    
+/*-------------------------------------------
     Global
 -------------------------------------------*/
- 
+
 /* Phark Image Replacement - http://phark.typepad.com/phark/2003/08/accessible_imag.html */
 .phark { display: block; text-indent: -9999px; background-position: 0 0; background-repeat: no-repeat; background-color: transparent; }
 
 /* Trimming Outline in Firefox - http://snook.ca/archives/html_and_css/trimming_long_o  */
 /*\*/ .phark-link { overflow: hidden; } /**/
 
-/* Easy Clearing - http://www.positioniseverything.net/easyclearing.html */ 
+/* Easy Clearing - http://www.positioniseverything.net/easyclearing.html */
 .clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
 
 .offscreen { position: absolute; left: -9999px; display: block; }
@@ -116,12 +116,18 @@ sub, sup { line-height: 0; }
 .rwd-break { display: block; }
 
 
-/*-------------------------------------------    
+/*-------------------------------------------
 	Modules
 -------------------------------------------*/
 .page-header { border-top: 10px solid #000; padding: 2em 2.5% 1em; border-bottom: 1px solid #000; margin: 0 0 2em; }
 	.page-header-title { margin: 0 0 0.25em; line-height: 1; }
 	.page-header-subtitle { font-size: 1.6rem; text-transform: uppercase; letter-spacing: 0.1em; }
+  .page-header {
+    img, svg {
+      width: 100%;
+      margin-bottom: 2em;
+    }
+  }
 
 .entry { border-bottom: 1px solid #ccc; padding: 2em 0 0; position: relative; }
 	.entry-title { font-weight: normal; font-size: 3rem; margin: 0 0 0.1em; }
@@ -135,7 +141,7 @@ sub, sup { line-height: 0; }
 
 
 
-/*-------------------------------------------    
+/*-------------------------------------------
 	Page Specific
 -------------------------------------------*/
 .main { border-left: 3px solid #f1f1f1; width: 85%; margin: 0 auto; padding: 0 0 0 30px; }
