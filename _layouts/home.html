@@ -1,0 +1,12 @@
+---
+layout: default
+---
+{% for post in site.posts reversed %}
+<article class="entry entry-{{ post.status }}">
+    <h1 class="entry-title">{{ post.title }}</h1>
+    <p class="entry-date">{{ post.date | date: "%b %-d, %Y" }}</p>
+
+    {{ post.content }}
+
+</article><!-- .entry -->
+{% endfor %}
