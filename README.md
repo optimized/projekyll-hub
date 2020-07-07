@@ -1,7 +1,7 @@
 Project Hub
 ===========
 
-A Jekyll powered of [Super Friendly / Dan Mall's Project Hub](https://github.com/SuperFriendly/project-hub/)
+A Jekyll powered version of [Super Friendly / Dan Mall's Project Hub](https://github.com/SuperFriendly/project-hub/)
 
 All "projects" come from the `_posts` directory. Edit the "[frontmatter](http://jekyll.tips/jekyll-casts/front-matter/)" for each post and place content in HTML or Markdown below.
 
